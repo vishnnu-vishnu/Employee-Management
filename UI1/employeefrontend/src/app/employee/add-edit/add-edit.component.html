@@ -1,0 +1,11 @@
+<div class="form-group row">
+    <div class="col-sm-12">
+        <input type="text" [(ngModel)]="name" placeholder="Name" class="form-control"><br>
+        <input type="text" [(ngModel)]="place" placeholder="Place" class="form-control"><br>
+        <input type="text" [(ngModel)]="mobile" placeholder="Mobile" class="form-control"><br>
+          <button type="button" class="btn btn-outline-secondary" (click)="save_employee()" *ngIf="emp.empid == 0">Save changes</button>
+          <button type="button" class="btn btn-outline-secondary" (click)="update_employee()" *ngIf="emp.empid != 0">update</button>
+
+    </div>
+
+</div>
